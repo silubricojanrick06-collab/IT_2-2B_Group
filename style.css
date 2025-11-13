@@ -120,14 +120,13 @@ footer{
   font-size:14px;
 }
 
-/* Additional styles for About page enhancements */
 .skip-link{position: absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
 .skip-link:focus{position:relative;left:auto;top:10px;width:auto;height:auto;background:var(--card);padding:8px 12px;border-radius:8px;z-index:1000;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
 
 .nav-link.active{background:rgba(0,0,0,0.06);}
 
-.hero-image{border-radius:12px;overflow:hidden;}
-.hero-image figcaption{font-size:13px;color:var(--muted);margin-top:8px;}
+.about-image{border-radius:12px;overflow:hidden;}
+.about-image figcaption{font-size:13px;color:var(--muted);margin-top:8px;}
 
 .values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px;}
 .team-grid{display:grid;grid-template-columns:200px 1fr;gap:18px;align-items:center;}
