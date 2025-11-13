@@ -48,7 +48,7 @@
 				</div>
 			</div>
 
-			<figure class="hero-image">
+			<figure class="about-image">
 				<img src="assets/picture.jpg" alt="Three Amaris fragrance bottles on a neutral background">
 				<figcaption class="muted">Crafted in small batches — photographed for storytelling.</figcaption>
 			</figure>
@@ -125,53 +125,13 @@
 				<div id="q2" class="muted" hidden>We do not test on animals. We follow modern safety protocols and use supplier data and in-vitro methods when required.</div>
 			</div>
 		</section>
-
-		<section class="section cta">
-			<div class="cta-card card" style="display:flex;flex-direction:column;gap:12px;">
-				<h3>Stay in touch</h3>
-				<p class="muted">Sign up for occasional notes about new releases and small-batch drops.</p>
-				<form action="#" method="post" class="card" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
-					<label for="email" class="muted" style="width:100%;">Email address</label>
-					<input id="email" name="email" type="email" placeholder="you@example.com" required style="flex:1;min-width:220px;">
-					<button class="btn btn-primary" type="submit">Subscribe</button>
-				</form>
-			</div>
-		</section>
 	</main>
 
 	<footer>
 		2025 Amaris Parfumerie. All rights reserved.
 	</footer>
 
-	<script>
-		// Mobile menu toggle
-		(function(){
-			const btn = document.getElementById('menuToggle');
-			const nav = document.getElementById('site-nav');
-			btn && btn.addEventListener('click', ()=>{
-				const expanded = btn.getAttribute('aria-expanded') === 'true';
-				btn.setAttribute('aria-expanded', String(!expanded));
-				if(window.getComputedStyle(btn).display !== 'none'){
-					nav.style.display = expanded ? '' : 'flex';
-					nav.style.flexDirection = 'column';
-					nav.style.gap = '8px';
-				}
-			});
-
-			// Simple FAQ toggle
-			document.querySelectorAll('[data-toggle]').forEach(btn =>{
-				btn.addEventListener('click', ()=>{
-					const id = btn.getAttribute('data-toggle');
-					const panel = document.getElementById(id);
-					const expanded = btn.getAttribute('aria-expanded') === 'true';
-					btn.setAttribute('aria-expanded', String(!expanded));
-					if(panel){
-						if(panel.hidden){ panel.hidden = false; } else { panel.hidden = true; }
-					}
-				});
-			});
-		})();
-	</script>
+	
 </body>
 </html>
 
