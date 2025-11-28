@@ -115,16 +115,37 @@
 			</div>
 		</section>
 
-		<section class="section" aria-labelledby="faq-title">
-			<div class="section-title" id="faq-title">FAQ</div>
-			<div class="card" id="faq">
-				<button class="btn btn-outline" data-toggle="q1" aria-expanded="false" style="display:block;width:100%;text-align:left;margin-bottom:8px;">How long do the fragrances last on the skin?</button>
-				<div id="q1" class="muted" hidden>Most of our scents last 6–8 hours on skin; longevity varies by skin chemistry and application.</div>
+		
+<section class="section" aria-labelledby="faq-title">
+    <div class="section-title" id="faq-title">FAQ</div>
+    <div class="card" id="faq">
 
-				<button class="btn btn-outline" data-toggle="q2" aria-expanded="false" style="display:block;width:100%;text-align:left;margin-top:8px;">Do you test on animals?</button>
-				<div id="q2" class="muted" hidden>We do not test on animals. We follow modern safety protocols and use supplier data and in-vitro methods when required.</div>
-			</div>
-		</section>
+        <button class="btn btn-outline" data-toggle="q1" aria-expanded="false"
+            style="display:block;width:100%;text-align:left;margin-bottom:8px;">How long do the fragrances last on the skin?</button>
+        <div id="q1" class="muted" hidden>
+            Most of our scents last 6–8 hours on skin; longevity varies by skin chemistry and application.
+        </div>
+
+        <button class="btn btn-outline" data-toggle="q2" aria-expanded="false"
+            style="display:block;width:100%;text-align:left;margin-top:8px;">Do you test on animals?</button>
+        <div id="q2" class="muted" hidden>
+            We do not test on animals. We follow modern safety protocols and use supplier data and in-vitro methods when required.
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.querySelectorAll("[data-toggle]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const targetID = btn.getAttribute("data-toggle");
+        const target = document.getElementById(targetID);
+
+        target.hidden = !target.hidden;
+        btn.setAttribute("aria-expanded", !target.hidden);
+    });
+});
+</script>
 	</main>
 
 	<footer>
