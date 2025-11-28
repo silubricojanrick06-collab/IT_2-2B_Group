@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="product-modals.css">
 </head>
 
 
@@ -37,7 +38,7 @@
    
    
       <div class="products-grid">
-        <div class="product">
+        <div class="product" onclick="document.getElementById('lunaModal').showModal()" role="button" tabindex="0" onkeypress="if(event.key==='Enter') document.getElementById('lunaModal').showModal()">
       
           <img src="assets/Luna.jpg" alt="Luna">
           <h4>Luna</h4>
@@ -47,7 +48,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" onclick="document.getElementById('paradoxModal').showModal()" role="button" tabindex="0" onkeypress="if(event.key==='Enter') document.getElementById('paradoxModal').showModal()">
           
           <img src="assets/Paradox.jpg" alt="Paradox">
           <h4>Paradox</h4>
@@ -57,7 +58,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" onclick="document.getElementById('tiffanyModal').showModal()" role="button" tabindex="0" onkeypress="if(event.key==='Enter') document.getElementById('tiffanyModal').showModal()">
         
           <img src="assets/Tiffany.jpg" alt="Tiffany">
           <h4>Tiffany</h4>
@@ -68,7 +69,7 @@
         </div>
       </div>
       <div class="products-grid">
-        <div class="product">
+        <div class="product" onclick="document.getElementById('amaris1Modal').showModal()" role="button" tabindex="0" onkeypress="if(event.key==='Enter') document.getElementById('amaris1Modal').showModal()">
       
           <img src="assets/picture.jpg" alt="Amaris No.1">
           <h4>Amaris No.1</h4>
@@ -78,7 +79,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" onclick="document.getElementById('amaris2Modal').showModal()" role="button" tabindex="0" onkeypress="if(event.key==='Enter') document.getElementById('amaris2Modal').showModal()">
           
           <img src="assets/picture2.jpg" alt="Amaris No.2">
           <h4>Amaris No.2</h4>
@@ -88,7 +89,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product" onclick="document.getElementById('amarisOudModal').showModal()" role="button" tabindex="0" onkeypress="if(event.key==='Enter') document.getElementById('amarisOudModal').showModal()">
         
           <img src="assets/picture3.jpg" alt="Amaris Oud">
           <h4>Amaris Oud</h4>
@@ -99,6 +100,174 @@
         </div>
     </section>
 
+<!-- Product modals - Pure HTML/CSS, no JavaScript -->
+
+<!-- Luna Product Modal -->
+<dialog id="lunaModal" class="product-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Luna</h2>
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </form>
+    </div>
+
+    <div class="modal-body">
+      <img src="assets/Luna.jpg" alt="Luna fragrance bottle" class="product-image">
+      <p class="product-description">A luminous and elegant fragrance that captures the essence of moonlit nights. Luna brings together soft floral notes with a warm amber base, creating a scent that feels both delicate and memorable.</p>
+      <div class="product-details">
+        <span class="price">₱ 350</span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="contact.html" class="btn btn-primary">Buy Now</a>
+      <form method="dialog">
+        <button class="btn btn-outline" type="submit">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Paradox Product Modal -->
+<dialog id="paradoxModal" class="product-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Paradox</h2>
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </form>
+    </div>
+
+    <div class="modal-body">
+      <img src="assets/Paradox.jpg" alt="Paradox fragrance bottle" class="product-image">
+      <p class="product-description">A striking blend of citrus and amber that challenges expectations. Paradox opens with vibrant citrus notes that gradually warm into a rich amber base, creating an intriguing scent journey.</p>
+      <div class="product-details">
+        <span class="meta">Citrus • Amber</span>
+        <span class="price">₱ 350</span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="contact.html" class="btn btn-primary">Buy Now</a>
+      <form method="dialog">
+        <button class="btn btn-outline" type="submit">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Tiffany Product Modal -->
+<dialog id="tiffanyModal" class="product-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Tiffany</h2>
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </form>
+    </div>
+
+    <div class="modal-body">
+      <img src="assets/Tiffany.jpg" alt="Tiffany fragrance bottle" class="product-image">
+      <p class="product-description">An oriental masterpiece featuring exotic oud and precious florals. Tiffany is a sophisticated fragrance that commands attention with its depth and complexity, perfect for those who appreciate luxury.</p>
+      <div class="product-details">
+        <span class="meta">Oriental • Oud</span>
+        <span class="price">₱ 350</span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="contact.html" class="btn btn-primary">Buy Now</a>
+      <form method="dialog">
+        <button class="btn btn-outline" type="submit">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Amaris No.1 Product Modal -->
+<dialog id="amaris1Modal" class="product-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Amaris No.1</h2>
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </form>
+    </div>
+
+    <div class="modal-body">
+      <img src="assets/picture.jpg" alt="Amaris No.1 fragrance bottle" class="product-image">
+      <p class="product-description">The classic Amaris signature scent. Amaris No.1 blends woody and floral notes to create a timeless fragrance that feels both refined and approachable. Perfect for everyday wear with lasting power.</p>
+      <div class="product-details">
+        <span class="meta">Woody • Floral</span>
+        <span class="price">$85</span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="contact.html" class="btn btn-primary">Buy Now</a>
+      <form method="dialog">
+        <button class="btn btn-outline" type="submit">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Amaris No.2 Product Modal -->
+<dialog id="amaris2Modal" class="product-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Amaris No.2</h2>
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </form>
+    </div>
+
+    <div class="modal-body">
+      <img src="assets/picture2.jpg" alt="Amaris No.2 fragrance bottle" class="product-image">
+      <p class="product-description">A fresh and vibrant take on the Amaris collection. Amaris No.2 combines bright citrus with a warm amber base, creating a scent that energizes and comforts in equal measure.</p>
+      <div class="product-details">
+        <span class="meta">Citrus • Amber</span>
+        <span class="price">$78</span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="contact.html" class="btn btn-primary">Buy Now</a>
+      <form method="dialog">
+        <button class="btn btn-outline" type="submit">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- Amaris Oud Product Modal -->
+<dialog id="amarisOudModal" class="product-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Amaris Oud</h2>
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </form>
+    </div>
+
+    <div class="modal-body">
+      <img src="assets/picture3.jpg" alt="Amaris Oud fragrance bottle" class="product-image">
+      <p class="product-description">The pinnacle of luxury. Amaris Oud features premium oud combined with oriental florals and spices, creating a deeply sensual and long-lasting fragrance. A statement scent for those who appreciate the finest things.</p>
+      <div class="product-details">
+        <span class="meta">Oriental • Oud</span>
+        <span class="price">$120</span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="contact.html" class="btn btn-primary">Buy Now</a>
+      <form method="dialog">
+        <button class="btn btn-outline" type="submit">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     </body>
 </html>
