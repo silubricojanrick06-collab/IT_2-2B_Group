@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="modal.css">
 </head>
 
 
@@ -49,7 +48,7 @@
         <p>Fragrances that capture emotion, memory, and elegance. Each scent tells a story — of renewal and timeless beauty.</p>
         <div class="actions">
           <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Explore</button>
-          <button class="btn btn-outline" onclick="document.getElementById('storyModal').showModal()">Our Story</button>
+            <button class="btn btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Our Story</button>
         </div>
       </div>
 
@@ -62,31 +61,6 @@
     
 
       </main>
-
-<!-- Modal for "Our Story" popup - Pure HTML/CSS, no JavaScript -->
-<dialog id="storyModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Our Story</h2>
-      <form method="dialog">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-      </form>
-    </div>
-
-    <div class="modal-body">
-      <p class="modal-lead">Amaris Parfumerie handcrafts fragrances that capture memory and emotion. Each composition is formed with carefully sourced essences, refined technique, and the belief that scent can transform an ordinary moment into something unforgettable.</p>
-
-      <p>We combine classic perfumery principles with contemporary sensibilities — balancing natural absolutes, premium accords, and refined longevity for an elegant, personalwear experience.</p>
-    </div>
-
-    <div class="modal-footer">
-      <a href="about.html" class="btn btn-primary">See More</a>
-      <form method="dialog">
-        <button class="btn btn-outline" type="submit">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
 
     </body>
 </html>
