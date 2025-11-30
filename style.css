@@ -233,16 +233,24 @@
   }
   
 
-    #bgVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 0%5;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-  z-index: -1;
- 
-}
+  /* Full-screen background video: centered and covers the viewport */
+  #bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* allow clicks through the video */
+    background: #000; /* fallback background color while video loads */
+  }
+
+  /* On small devices, limit the video size to avoid excessive bandwidth/CPU; it still covers */
+  @media (max-width: 480px) {
+    #bgVideo { min-width: 100%; min-height: 100%; }
+  }
 
