@@ -163,36 +163,193 @@ dialog.product-modal::backdrop {
   transform: translateY(-2px);
 }
 
+@media (max-width: 1024px) {
+  dialog.product-modal {
+    max-width: 85%;
+    max-height: 80vh;
+  }
+
+  .product-modal .modal-content {
+    padding: 22px;
+  }
+
+  .product-modal .modal-header h2 {
+    font-size: 28px;
+  }
+
+  .product-image {
+    height: 300px;
+  }
+
+  .product-details {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  dialog.product-modal {
+    max-width: 92%;
+    max-height: 85vh;
+  }
+
+  .product-modal .modal-content {
+    padding: 18px;
+  }
+
+  .product-modal .modal-header h2 {
+    font-size: 24px;
+  }
+
+  .product-image {
+    height: 280px;
+    margin-bottom: 12px;
+  }
+
+  .product-description {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .product-details {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .product-modal .modal-footer {
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  .product-modal .modal-footer .btn,
+  .product-modal .modal-footer form button {
+    flex: 1;
+  }
+}
+
 @media (max-width: 640px) {
   dialog.product-modal {
     max-width: 95%;
     max-height: 90vh;
+    border-radius: 12px;
   }
 
   .product-modal .modal-content {
-    padding: 20px;
+    padding: 16px;
   }
 
   .product-modal .modal-header h2 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .product-image {
-    height: 260px;
+    height: 240px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+
+  .product-description {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
   }
 
   .product-details {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .product-details .price {
+    font-size: 16px;
   }
 
   .product-modal .modal-footer {
     flex-direction: column;
+    gap: 8px;
   }
 
   .product-modal .modal-footer .btn,
   .product-modal .modal-footer form button {
     width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+
+  .product-modal .modal-close {
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  dialog.product-modal {
+    max-width: 98%;
+    max-height: 92vh;
+    width: 100%;
+  }
+
+  .product-modal .modal-content {
+    padding: 12px;
+  }
+
+  .product-modal .modal-header {
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  .product-modal .modal-header h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .product-image {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .product-description {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .product-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+
+  .product-details .meta {
+    font-size: 11px;
+  }
+
+  .product-details .price {
+    font-size: 15px;
+  }
+
+  .product-modal .modal-footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .product-modal .modal-footer .btn,
+  .product-modal .modal-footer form button {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .product-modal .modal-close {
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
   }
 }
