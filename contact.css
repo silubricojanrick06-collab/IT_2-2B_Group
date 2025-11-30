@@ -21,3 +21,20 @@ input,textarea{
   margin-bottom:12px;
 }
 textarea{min-height:120px;resize:vertical;}
+.insta i {
+  font-size: 20px;   
+  color: #000;       
+  margin-left: 8px;  
+}
+.fb i {
+  font-size: 20px;     
+  color: #000;
+  margin-left: 8px; 
+  vertical-align: middle;
+}
+.email i {
+  font-size: 20px;
+  color: #000;
+  margin-left: 8px;
+  vertical-align: middle;
+}
