@@ -21,7 +21,6 @@ input,textarea{
   margin-bottom:12px;
 }
 textarea{min-height:120px;resize:vertical;}
-<<<<<<< HEAD
 .insta i {
   font-size: 20px;   
   color: #000;       
@@ -38,8 +37,7 @@ textarea{min-height:120px;resize:vertical;}
   color: #000;
   margin-left: 8px;
   vertical-align: middle;
-=======
-
+}
 @media(max-width:1024px){
   .contact-grid{grid-template-columns:1fr 340px;gap:18px;}
 }
@@ -67,5 +65,4 @@ textarea{min-height:120px;resize:vertical;}
   input,textarea{padding:8px;font-size:14px;margin-bottom:6px;}
   textarea{min-height:80px;}
   label{font-size:12px;margin-bottom:4px;}
->>>>>>> 5e2c74f717c83e35b8e923f1d29edc52a1ccbf63
 }
